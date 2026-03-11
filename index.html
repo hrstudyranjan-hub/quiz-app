@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Quiz AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Quiz AI</h1>
+
+        <div id="setup">
+            <input type="text" id="topic" placeholder="Enter Topic (e.g. Java)" required>
+            <div class="params">
+                <input type="number" id="num-questions" value="3" min="1" max="10"> Questions
+                <input type="number" id="time-limit" value="1" min="1"> Minutes
+            </div>
+            <button id="start-btn">Generate & Start Quiz</button>
+        </div>
+
+        <div id="quiz-area" style="display:none">
+            <h2 id="timer">Time Left: --:--</h2>
+            <div id="question-container">
+                <h3 id="question-text"></h3>
+                <div id="options"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
