@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyCWEaSbuNK-MtMqHG0LjdL8lumNWO5B9QM"; 
+const API_KEY = "Put the API key here to use the quiz app, actually I tried putting mine due to being publlic it was blocked."; 
 const el = id => document.getElementById(id);
 let qs = [], i = 0, score = 0;
 
@@ -62,5 +62,6 @@ window.check = (idx) => {
     alert(`Quiz Over! Score: ${score}/${qs.length}`);
     location.reload();
 };
+
 
 el("start-btn").onclick = start;
